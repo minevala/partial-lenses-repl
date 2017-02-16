@@ -1,0 +1,21 @@
+{
+  "name": "partial-lenses-repl",
+  "version": "1.0.0",
+  "description": "An online repl to try partial.lenses",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify editor.js -o bundle.js -t [ babelify --presets [ es2015 ] ]",
+    "start": "npm run build && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
+    "brace": "^0.9.1",
+    "browserify": "^14.0.0",
+    "eslint": "^3.14.1",
+    "partial.lenses": "^9.0.3"
+  }
+}

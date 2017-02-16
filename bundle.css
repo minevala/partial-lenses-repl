@@ -1,0 +1,71 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4078c0;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    color: rgb(221, 239, 255);
+    margin: 0;
+    padding: 1rem 1rem .5em;
+    text-transform: uppercase;
+}
+
+header nav {
+    justify-content: flex-end;
+    background-color: #374e6d;
+    display: flex;
+    padding: 5px 10px;
+}
+
+nav button {
+    background-color: #000;
+    color: #fff;
+    border: 0 none;
+    outline: 0 none;
+}
+
+#wrapper {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+main, aside {
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+main {
+    left: 0;
+    right: 50%;
+}
+
+#editor {
+    height: 100%;
+    width: 100%;
+}
+
+aside {
+    background-color: #444544;
+    color: #374e6d;
+    left: 50%;
+    right: 0;
+}
+
+/* overrides */
+
+.ace-monokai {
+    background-color: #444544;
+}
+
+.ace-content {
+    padding-top: .5rem;
+}
